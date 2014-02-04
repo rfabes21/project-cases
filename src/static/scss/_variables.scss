@@ -1,0 +1,51 @@
+//
+// Variables
+// ---------------------------
+
+// Globals
+// -------------------------
+$baseUrl: env_or_default("STATIC_URL", "/static/");
+
+// Colors
+// -------------------------
+$white:                     #fff !default;
+$black:                     #000 !default;
+$red:                       #ac3322;
+$grey:                      #a1a09b;
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground:            $grey !default;
+$productSelectBackground:   #575654;
+$footerBackground:          #393939;
+
+// Links
+// -------------------------
+$linkColor:                 $white !default;
+$linkColorHover:            darken($linkColor, 15%) !default;
+
+// Typography
+// -------------------------
+$baseFontSize:              12px !default;
+$baseFontFamily:            "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$baseLineHeight:            1.2 !default;
+$textColor:                 $white;
+
+$headingsFontFamily:        inherit !default; // empty to use BS default, $baseFontFamily
+$headingsFontWeight:        100 !default;    // instead of browser default, bold
+$headingsColor:             inherit !default; // empty to use BS default, $textColor
+$headingsLetterSpacing:     1.5px;
+
+// Fonts
+// -------------------------
+$ProximaRegular:            "Proxima N W15 Reg";
+$ProximaSemiBold:           "Proxima N W15 Smbd";
+$ProximaThin:               "Proxima N W01 Thin Reg";
+$DinNextCondensed:          "DINNextW01-CondensedLig";
+
+// Buttons
+// -------------------------
+$btnBackground:             #333333 !default;
+$btnBackgroundHighlight:    darken($white, 10%) !default;
+$btnBorder:                 $white !default;

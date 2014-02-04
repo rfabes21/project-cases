@@ -1,0 +1,93 @@
+//
+// Typography
+// ---------------------------
+
+// Links
+// -------------------------
+a {
+    color: $linkColor;
+    text-decoration: none;
+    &:hover {
+        color: $linkColorHover;
+    }
+}
+
+// Body text
+// -------------------------
+p {
+    margin: 0 0 $baseLineHeight / 2;
+    font-family: $ProximaRegular;
+    font-size: 1.5em; /* 12 / 18 px */
+
+}
+
+
+// Emphasis & Misc
+// -------------------------
+small { font-size: 85%; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+cite { font-style: normal; }
+
+
+// Headings
+// -------------------------
+h1, h2, h3, h4, h5, h6 {
+    margin: ($baseLineHeight / 2) 0;
+    line-height: 1;
+    text-rendering: optimizelegibility; // Fix the character spacing for headings
+
+}
+h1 {
+    font-size: 65px;
+    line-height: 40px;
+    color: $white;
+
+}
+h2 {
+    font-size: 64px;
+    color: $white;
+    font-family: $ProximaThin;
+    text-transform: uppercase;
+    letter-spacing: $headingsLetterSpacing;
+}
+
+h3{
+    font-size: 55px;
+    line-height: 55px;
+    color: $white;
+    font-weight: $headingsFontWeight;
+    padding: 0;
+    margin: 20px 0 20px 0;
+    letter-spacing: $headingsLetterSpacing;
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+// Horizontal rules
+hr {
+    margin: $baseLineHeight 0;
+    height: 2px;
+    border: 0;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid $white;
+}
+
+// Addresses
+address {
+    display: block;
+    margin-bottom: $baseLineHeight;
+    font-style: normal;
+    line-height: $baseLineHeight;
+}

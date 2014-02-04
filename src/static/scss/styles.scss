@@ -1,3 +1,27 @@
 @import 'compass';
 @import 'bourbon/bourbon';
+// $visual-grid: true;
+// $visual-grid-index: front;
 @import 'neat/neat';
+
+// Sprites a la Compass
+$ui-spacing: 15px;
+$ui-sprite-dimensions: true;
+@import "sprites/ui/*.png";
+@include all-ui-sprites;
+
+// Core variables and mixins
+@import "variables"; // Set colors, typography, etc
+@import "mixins"; // Various mixins
+
+// CSS Reset
+@import "reset"; // normalize all browsers
+
+// CSS Scaffolding
+@import "scaffolding";
+
+// Base CSS
+@import "type"; // Base typography
+
+// Page Specific
+@import "p-folio-product"; // Folio Product Detail page

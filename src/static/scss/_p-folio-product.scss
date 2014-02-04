@@ -1,0 +1,64 @@
+header {
+    height: 5.888888em;
+    // position: absolute;
+
+    .ui-nav-dropdown {
+        margin: 3.75em;
+        float: left;
+
+    }
+
+    .ui-logo {
+        float: left;
+        margin-top: 3em;
+    }
+
+    .login {
+        float: right;
+        margin-top: 4em;
+        width: 36em;
+
+        li {
+            text-transform: uppercase;
+            font-size: 1.666666em;
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 15%;
+        }
+
+        li:last-child {
+            margin-right: 5em;
+        }
+    }
+}
+
+/* CAROUSEL STYLING----------------------- */
+.product-carousel {
+    @include outer-container;
+    @include fill-parent;
+    height: 79.75em;
+
+    .product-info {
+        @include span-columns(2);
+        @include shift(1);
+        margin-top: 10em;
+
+    }
+
+    .showcase {
+        @include span-columns(4);
+        height: 100%;
+
+        .img-1 {
+            background-image: url('/static/img/folio-ipadmini-1.png');
+            display: block;
+        }
+    }
+
+    .purchase-area {
+        @include span-columns(2);
+        margin-top: 10em;
+    }
+}
+
+
