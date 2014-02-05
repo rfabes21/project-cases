@@ -16,7 +16,7 @@ a {
 // -------------------------
 p {
     margin: 0 0 $baseLineHeight / 2;
-    font-family: $ProximaRegular;
+    font-family: $bGRegularItalic;
     font-size: 1.5em; /* 12 / 18 px */
 
 }
@@ -33,21 +33,21 @@ cite { font-style: normal; }
 // Headings
 // -------------------------
 h1, h2, h3, h4, h5, h6 {
-    margin: ($baseLineHeight / 2) 0;
+    margin: 0;
     line-height: 1;
     text-rendering: optimizelegibility; // Fix the character spacing for headings
 
 }
 h1 {
-    font-size: 65px;
-    line-height: 40px;
+    font-family: $bGRegular;
+    font-size: 10em;
     color: $white;
 
 }
 h2 {
     font-size: 64px;
     color: $white;
-    font-family: $ProximaThin;
+    font-family: $bGRegular;
     text-transform: uppercase;
     letter-spacing: $headingsLetterSpacing;
 }

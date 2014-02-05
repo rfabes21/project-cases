@@ -1,0 +1,32 @@
+//
+// Buttons
+// ---------------------------
+
+button {
+    background-color: $btnBackground;
+    border: 1px solid $white;
+    padding: 1em 2em;
+    color: $white;
+    font-family: $bGRegular;
+    font-size: 1em;
+    text-transform: uppercase;
+
+    //Hover State
+    &:hover {
+        background-color: $white;
+        border: 1px solid #333333;
+        color: #333333;
+    }
+
+    // Focus state for keyboard and accessibility
+    &:focus {
+        @include tab-focus();
+    }
+}
+
+// Core
+.btn {
+    display: inline-block;
+    @include ie7-inline-block();
+
+}

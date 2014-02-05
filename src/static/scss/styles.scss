@@ -23,5 +23,8 @@ $ui-sprite-dimensions: true;
 // Base CSS
 @import "type"; // Base typography
 
+//Components
+@import "c-buttons"; //General Buttons Styles
+
 // Page Specific
 @import "p-folio-product"; // Folio Product Detail page
