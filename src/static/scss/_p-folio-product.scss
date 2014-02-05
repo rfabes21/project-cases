@@ -1,3 +1,4 @@
+/* Header Section ----------------------*/
 header {
     height: 5.888888em;
     width: 100%;
@@ -34,16 +35,15 @@ header {
 
 /* CAROUSEL STYLING----------------------- */
 .product-carousel {
-    @include outer-container;
-    @include fill-parent;
     background-image: url('/static/img/folio-ipadmini-1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 85.666666em;
 }
 .product-info {
-    @include span-columns(2);
-    @include shift(1.5);
-    @include omega;
-    margin-top: 20em;
+    float: left;
+    margin: 12% 0 0 12%;
+
 
     .info-details {
         width: 22em;
@@ -67,36 +67,9 @@ header {
     }
 }
 
-.thumbs {
-    @include span-columns(4.5);
-    @include shift(1);
-    min-width: 50em;
-    margin-top: 73em;
-
-    li {
-        display: inline-block;
-        margin: 2%;
-        width: 8.666666em;
-        height: 8.666666em;
-
-        &:hover {
-            background-color: #9c9b96;
-        }
-
-        span {
-            display: block;
-            margin: 2em auto;
-        }
-    }
-
-    .active-thumb {
-        background-color: #9c9b96;
-    }
-}
-
 .purchase-area {
-    @include span-columns(2);
-    margin-top: 23em;
+    float: right;
+    margin: 15% 8% 0 0;
     min-width: 29em;
 
     p {
@@ -194,15 +167,34 @@ header {
     }
 }
 
-// @media screen and (max-width: 1600px) {
-//     .product-info {
-//         @include span-columns(1, block-collapse);
-//         @include shift(0);
-//     }
-// }
+.thumbs {
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+
+    li {
+        display: inline-block;
+        margin: 1%;
+        width: 8.666666em;
+        height: 8.666666em;
+
+        &:hover {
+            background-color: #9c9b96;
+        }
+
+        span {
+            display: block;
+            margin: 2em auto;
+        }
+    }
+
+    .active-thumb {
+        background-color: #9c9b96;
+    }
+}
 
 
-/* Video and Media Section */
+/* Video and Media Section ------------*/
 .product-video {
     @extend .embed-container;
 }
@@ -214,6 +206,61 @@ header {
         max-width: 100%;
     }
 }
+
+
+/* Feature Section ------------------- */
+.features {
+    @include clearfix;
+}
+
+.feature-select {
+    margin: auto;
+    text-align: center;
+
+
+    li {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.666666em;
+        font-family: $bGRegular;
+        margin: 3%;
+    }
+
+    .active-feature {
+        font-family: $bGBold;
+        font-weight: bold;
+    }
+}
+
+.feature {
+    display: none;
+    width: 100%;
+
+
+
+    .feature-img {
+        width: 40%;
+        margin-left: 10%;
+        float: left;
+
+        img {
+         max-width: 100%;
+        }
+    }
+
+    .feature-data {
+        float: right;
+        width: 35%;
+        margin: 5% 10% 0 0;
+    }
+}
+
+.active-feature {
+    display: block;
+
+}
+
+
 
 
 

@@ -18,7 +18,6 @@ p {
     margin: 0 0 $baseLineHeight / 2;
     font-family: $bGRegularItalic;
     font-size: 1.5em; /* 12 / 18 px */
-
 }
 
 
@@ -45,11 +44,9 @@ h1 {
 
 }
 h2 {
-    font-size: 64px;
+    font-size: 4em;
     color: $white;
     font-family: $bGRegular;
-    text-transform: uppercase;
-    letter-spacing: $headingsLetterSpacing;
 }
 
 h3{
