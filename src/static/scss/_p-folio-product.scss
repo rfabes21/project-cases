@@ -1,4 +1,4 @@
-/* Header Section ----------------------*/
+/* Navbar Section ----------------------*/
 header {
     height: 5.888888em;
     width: 100%;
@@ -211,6 +211,7 @@ header {
 /* Feature Section ------------------- */
 .features {
     @include clearfix;
+    height: 60em;
 }
 
 .feature-select {
@@ -252,6 +253,10 @@ header {
         float: right;
         width: 35%;
         margin: 5% 10% 0 0;
+
+        p {
+            line-height: 2em;
+        }
     }
 }
 
@@ -260,6 +265,169 @@ header {
 
 }
 
+.history {
+    // width: 100%;
+    @include clearfix;
+
+    div {
+        width: 50%;
+        background-repeat: no-repeat;
+
+        p {
+            line-height: 300%;
+            width: 60%;
+            margin-bottom: 15%;
+            position: relative;
+            top: 10%;
+        }
+
+        h2 {
+            margin-top: 8%;
+            width: 100%;
+        }
+    }
+
+    .tradition {
+        background-image: url('/static/img/tradition-bg.png');
+        float: left;
+        background-size: 100%;
+
+        h2, p {
+            float: left;
+            margin-left: 7%;
+        }
+    }
+
+    .modern {
+        background-image: url('/static/img/modern-bg.png');
+        background-size: 100%;
+        float: right;
+        text-align: right;
+
+        h2, p {
+            float: right;
+            margin-right: 7%;
+
+        }
+    }
+}
+
+/* Product Select Section */
+.product-select {
+    width: 100%;
+    @include clearfix;
+
+    div {
+        width: 25%;
+        background-color: $productSelectBackground;
+        float: left;
+        height: 46em;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    p {
+        width: 5em;
+        margin: 13.5em auto;
+        text-align: center;
+
+        span {
+            display: block;
+            border-top: 1px solid $white;
+        }
+    }
+
+    .product-1 {
+        background-image: url('/static/img/product-ultraslim.png');
+    }
+
+    .product-2 {
+        background-image: url('/static/img/product-htc.png');
+    }
+    .product-3 {
+        background-image: url('/static/img/product-folio.png');
+    }
+    .product-4 {
+        background-image: url('/static/img/product-ipadsleeve.png');
+    }
+
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    height: 36.833333em;
+    padding-top: 4em;
+    position: relative;
+    background-color: $footerBackground;
+
+    p {
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    ul {
+        margin-top: 0;
+    }
+
+    li {
+        font-size: 1.5em;
+        padding-top: 1em;
+    }
+
+    .list-wrapper {
+        float: left;
+        margin-left: 5%;
+    }
+
+    .social-connect {
+        float: right;
+        margin-right: 4%;
+    }
+
+    .newsletter, .social-wrapper {
+        float: left;
+    }
+
+    .social-wrapper {
+        margin-left: 10em;
+        width: 16em;
+    }
+
+    .email {
+        height: 3.5em;
+        width: 25em;
+        margin: 1em 2em 0 0;
+    }
+
+    .sign-up {
+        margin-top: 1em;
+    }
+
+    .legal {
+        position: absolute;
+        left: 5%;
+        bottom: 2em;
+    }
+
+    .social-media {
+
+
+        li {
+            margin: 1em .3em 0 0;
+            float: left;
+            @include transition-property (transform);
+            @include transition-duration(0.5s);
+            @include transition-timing-function(ease-in);
+            @include transition-delay(none);
+
+            &:hover {
+                @include transform(rotate(360deg));
+            }
+        }
+    }
+}
 
 
 
