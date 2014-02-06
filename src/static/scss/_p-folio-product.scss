@@ -276,7 +276,6 @@ header {
         p {
             line-height: 300%;
             width: 60%;
-            margin-bottom: 15%;
             position: relative;
             top: 10%;
         }
@@ -290,7 +289,8 @@ header {
     .tradition {
         background-image: url('/static/img/tradition-bg.png');
         float: left;
-        background-size: 100%;
+        padding-bottom: 4%;
+        // background-size: 100%;
 
         h2, p {
             float: left;
@@ -300,9 +300,10 @@ header {
 
     .modern {
         background-image: url('/static/img/modern-bg.png');
-        background-size: 100%;
         float: right;
         text-align: right;
+        padding-bottom: 4%;
+        // background-size: 100%;
 
         h2, p {
             float: right;
@@ -412,7 +413,6 @@ footer {
     }
 
     .social-media {
-
 
         li {
             margin: 1em .3em 0 0;
