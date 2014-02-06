@@ -39,31 +39,50 @@
 
 .about-content {
     @include clearfix;
-}
 
-.about {
-    height: 45em;
-    width: 50%;
-    padding: 5% 0;
-    margin: 0 auto;
+    .about {
+        height: 45em;
+        width: 50%;
+        padding: 5% 0;
+        margin: 0 auto;
 
-    h1, p{
-        margin-left: 5%;
-        width: 80%;
+        h1, p{
+            margin-left: 5%;
+            width: 80%;
+        }
+    }
+
+    .about-img {
+        height: 45em;
+        width: 50%;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .quote-wrapper {
+        width: 100%;
+        height: 30em;
+        background-image: url('/static/img/about/quote-bg.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        clear: both;
+        text-align: center;
+
+        .quote {
+            font-size: 4.333333em;
+            font-family: $calsonStdBlack;
+            width: 80%;
+            margin: 0 auto;
+            padding: 9% 0 0 0;
+        }
     }
 }
 
-.about-img {
-    height: 45em;
-    width: 50%;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
 
 
