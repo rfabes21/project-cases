@@ -3,7 +3,7 @@
 
 /* CAROUSEL STYLING----------------------- */
 .product-carousel {
-    background-image: url('/static/img/folio-ipadmini-1.png');
+    background-image: url('/static/img/product-detail/folio-ipadmini-1.png');
     background-size: 100%;
     background-repeat: no-repeat;
     height: 85.666666em;
@@ -247,7 +247,7 @@
     }
 
     .tradition {
-        background-image: url('/static/img/tradition-bg.png');
+        background-image: url('/static/img/product-detail/tradition-bg.png');
         float: left;
         padding-bottom: 4%;
 
@@ -258,7 +258,7 @@
     }
 
     .modern {
-        background-image: url('/static/img/modern-bg.png');
+        background-image: url('/static/img/product-detail/modern-bg.png');
         float: right;
         text-align: right;
         padding-bottom: 4%;
@@ -297,17 +297,17 @@
     }
 
     .product-1 {
-        background-image: url('/static/img/product-ultraslim.png');
+        background-image: url('/static/img/product-detail/product-ultraslim.png');
     }
 
     .product-2 {
-        background-image: url('/static/img/product-htc.png');
+        background-image: url('/static/img/product-detail/product-htc.png');
     }
     .product-3 {
-        background-image: url('/static/img/product-folio.png');
+        background-image: url('/static/img/product-detail/product-folio.png');
     }
     .product-4 {
-        background-image: url('/static/img/product-ipadsleeve.png');
+        background-image: url('/static/img/product-detail/product-ipadsleeve.png');
     }
 }
 
