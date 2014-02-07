@@ -27,5 +27,7 @@ $ui-sprite-dimensions: true;
 @import "c-buttons"; //General Buttons Styles
 
 // Page Specific
-@import "p-folio-product"; // Folio Product Detail page
+@import "p-product-detail"; // Folio Product Detail page
 @import "p-about"; // About Us page
+@import "p-promo-landing"; // Promotional landing page
+@import "p-search-a"; // Faceted search page (style A)

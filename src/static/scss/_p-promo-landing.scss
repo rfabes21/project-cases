@@ -1,0 +1,44 @@
+@import "navbar"; // global navbar styles
+@import "footer"; // global footer styles
+@import "header"; // global header styles
+
+.promo-background {
+    background-image: url('/static/img/promo-landing/promo-landing-bg.png');
+}
+
+.promo-item-wrapper {
+    width: 100%;
+    height: 50em;
+    background-color: $promoItemBackground1;
+    padding: 8% 0;
+
+    .promo-item {
+        margin-left: 25%;
+        float: left;
+    }
+
+    .promo-details {
+        float: left;
+        width: 30%;
+
+        span {
+            margin-top: 1em;
+            display: block;
+            text-transform: uppercase;
+            font-size: 1.666666em;
+            font-family: $bGBold;
+        }
+
+        p {
+            line-height: 200%;
+        }
+    }
+
+    .shop-now {
+        width: 12em;
+    }
+}
+
+.item-two-background {
+    background-color: $promoItemBackground2;
+}

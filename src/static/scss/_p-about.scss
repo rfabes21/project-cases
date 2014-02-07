@@ -1,40 +1,9 @@
-@import "header"; //global header styles
+@import "navbar"; // global navbar styles
 @import "footer"; // global footer styles
+@import "header"; // global header styles
 
-.about-wrapper {
-    width: 100%;
-    height: 100%;
-}
-
-.story-wrapper {
+.about-background {
     background-image: url('/static/img/about/our-story-bg.png');
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: top;
-    text-align: center;
-
-    .title {
-        margin: auto;
-        width: 50em;
-        text-align: center;
-        padding: 18% 0;
-
-        .our-story {
-            @extend h3;
-            font-size: 8.333333em;
-
-        }
-
-        hr {
-            width: 40%;
-        }
-
-        .story-detail {
-            line-height: 200%;
-            font-size: 2em;
-            font-family: $bGRegularItalic;
-        }
-    }
 }
 
 .about-content {
